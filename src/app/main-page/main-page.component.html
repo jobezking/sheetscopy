@@ -1,0 +1,10 @@
+<h2> Copy Google Document By Supplying Document ID Below </h2>
+
+<form [formGroup]="copyForm" (ngSubmit)="onSubmit()">
+  <input type = "text" class="mytext" name = "docID" placeholder = "Google Sheets Document ID" formControlName="docID" >
+  <br/>
+
+  <input type = "text" class="mytext" name = "docName" placeholder = "New Document Name (Optional)" formControlName="docName" >
+  <br/>
+  <input type = "submit" value = "Send">
+</form> 
